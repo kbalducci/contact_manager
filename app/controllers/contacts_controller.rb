@@ -8,6 +8,14 @@ class ContactsController < ApplicationController
     @contact = Contact.new
   end
 
+  # def sort_by_letter
+  #   @contacts.order(last_name: :asc)
+  # end
+
+  # def alphabetize
+  #   @contacts = Contact.all
+  #   @contacts.order(last_name: :asc)
+  # end
   # GET /contacts/1
   # GET /contacts/1.json
   def show
@@ -29,7 +37,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Contact was successfully created.' }
 
         format.json { render json: @contact, status: :created, message: "Yay"}
       else
