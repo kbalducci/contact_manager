@@ -14,4 +14,20 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-/*@import "posts";*/
+@import "contacts";
+
+body {
+  background-color: #white;
+}
+
+.banner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 100px;
+  background-color: #6f5499;
+  border-bottom: 1px solid;
+  text-align: center;
+  height: 115px;
+  color: white;
+}
+
